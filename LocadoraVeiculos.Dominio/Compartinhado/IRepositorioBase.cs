@@ -1,6 +1,6 @@
 ﻿namespace LocadoraVeiculos.Dominio.Compartinhado
 {
-    public interface IRepositorio<TEntidade> where TEntidade : EntidadeBase
+    public interface IRepositorioBase<TEntidade> where TEntidade : EntidadeBase
     {
         void Inserir(TEntidade entidade);
         void Editar(TEntidade entidadeAtualizada);
