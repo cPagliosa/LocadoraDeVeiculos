@@ -30,6 +30,10 @@ namespace LocadoraVeiculos.Dominio.ModuloAutomovel
 
 
         //Construtor
+        protected Automovel()
+        {
+            
+        }
         public Automovel(string placa,string marca,string cor,string modelo,Combustivel tipoCombustivel,
             decimal capacidadeCombustivel,int ano,string img,GrupoAutomovel grupo)
         {
@@ -43,6 +47,11 @@ namespace LocadoraVeiculos.Dominio.ModuloAutomovel
             this.Img = img;
             this.Grupo = grupo;
             this.estaAlugado = false;
+        }
+
+        public override List<string> Validar()
+        {
+            throw new NotImplementedException();
         }
     }
 }

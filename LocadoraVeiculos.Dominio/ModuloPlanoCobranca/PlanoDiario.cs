@@ -11,5 +11,10 @@
             this.PrecoDiario = precoDiario;
             this.PrecoKm = precoKm;
         }
+
+        public override List<string> Validar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

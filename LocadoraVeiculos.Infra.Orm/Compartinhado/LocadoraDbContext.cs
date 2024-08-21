@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using LocadoraVeiculos.Dominio;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -6,6 +7,8 @@ namespace LocadoraVeiculos.Infra.Orm.Compartinhado
 {
     public class LocadoraDbContext : DbContext
     {
+        public DbSet<GrupoAutomovel> GruposAutomoveis { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var config = new ConfigurationBuilder()

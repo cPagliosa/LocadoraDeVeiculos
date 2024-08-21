@@ -15,5 +15,10 @@ namespace LocadoraVeiculos.Dominio.ModuloTaxaServico
             this.Preco = preco;
             this.Tipo = tipo;
         }
+
+        public override List<string> Validar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

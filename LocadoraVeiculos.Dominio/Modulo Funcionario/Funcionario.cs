@@ -30,5 +30,10 @@ namespace LocadoraVeiculos.Dominio
             this.Salario = salario;
             this.AluguelAberto = false;
         }
+
+        public override List<string> Validar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

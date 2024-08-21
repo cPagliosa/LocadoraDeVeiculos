@@ -6,17 +6,22 @@ namespace LocadoraVeiculos.Dominio
     {
         //Variaveis
         public string Nome { get; set; }
-        private bool TemAutomoveis { get; set; }
-        private bool TemPlanoCobranca { get; set; }
 
         //Funções
+        public override List<string> Validar()
+        {
+            List<string> erros = new List<string>();
+            if(this.Nome.Length < 3)
+                erros.Add("O nome é obrigatorio");
 
+            return erros;
+        }
         //Construtor
+        protected GrupoAutomovel() { }
+        
         public GrupoAutomovel(string nome)
         {
             this.Nome = nome;
-            this.TemAutomoveis = false;
-            this.TemPlanoCobranca = false;
         }
     }
 }

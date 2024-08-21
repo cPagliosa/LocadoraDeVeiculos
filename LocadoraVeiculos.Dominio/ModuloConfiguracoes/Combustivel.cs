@@ -12,5 +12,10 @@ namespace LocadoraVeiculos.Dominio.ModuloConfiguracoes
             this.Nome = nome;
             this.Valor = valor;
         }
+
+        public override List<string> Validar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -22,5 +22,9 @@ namespace LocadoraVeiculos.Dominio.ModuloCondutor
             this.Validade = validade;
         }
 
+        public override List<string> Validar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

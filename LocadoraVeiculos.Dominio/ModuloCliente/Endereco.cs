@@ -12,5 +12,9 @@ namespace LocadoraVeiculos.Dominio.ModuloCliente
         public String Rua { get; set; }
         public int Numero { get; set; }
 
+        public override List<string> Validar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

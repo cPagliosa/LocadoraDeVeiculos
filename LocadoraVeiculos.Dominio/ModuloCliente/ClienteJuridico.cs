@@ -12,5 +12,10 @@
             this.Cpnj = cpnj;
             this.Endereco = endereco;
         }
+
+        public override List<string> Validar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

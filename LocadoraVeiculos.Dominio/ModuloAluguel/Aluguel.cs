@@ -31,5 +31,9 @@ namespace LocadoraVeiculos.Dominio.ModuloAluguel
             this.concluido = false;
         }
 
+        public override List<string> Validar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
