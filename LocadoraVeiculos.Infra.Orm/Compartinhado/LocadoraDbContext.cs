@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using LocadoraVeiculos.Dominio;
+using LocadoraVeiculos.Infra.Orm.ModuloGrupoAutomovel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -25,7 +26,7 @@ namespace LocadoraVeiculos.Infra.Orm.Compartinhado
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-           
+            modelBuilder.ApplyConfiguration(new MapeadorGrupoAutomoveis());
             base.OnModelCreating(modelBuilder);
         }
     }
